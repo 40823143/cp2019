@@ -154,9 +154,31 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">基本程式 << <a href='基本程式.html'>Previous</a> <a href='HELLO 迴圈.html'>Next</a> >> HELLO 迴圈<br /><h1>HELLO WORLD</h1>
-<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=310b3332b4e9d6c76d0d7c57d8d5b60b" width="800"></iframe></p>
-<br />基本程式 << <a href='基本程式.html'>Previous</a> <a href='HELLO 迴圈.html'>Next</a> >> HELLO 迴圈</div>
+    <div id="tipue_search_content">溫度轉換 << <a href='溫度轉換.html'>Previous</a> <a href='基本程式.html'>Next</a> >> 基本程式<br /><h1>溫度轉換2</h1>
+<p></p>
+<pre></pre>
+<p></p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823143&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 1200 ;
+document.getElementById("iframe").height = 800 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button button="" onclick="getDart('temperture')"></button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="800" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823143&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/偵測轉換&amp;theme=dark" width="1200"></iframe></p>
+<p></p>
+<br />溫度轉換 << <a href='溫度轉換.html'>Previous</a> <a href='基本程式.html'>Next</a> >> 基本程式</div>
         
     <!-- footer -->
       <div class="container">
